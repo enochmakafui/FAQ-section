@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&family=Oxygen&family=Oxygen+Mono&family=Poppins&family=Work+Sans&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    background-color:  hsl(275, 100%, 97%);
+    color: hsl(292, 42%, 14%);
+    font-family: 'Work Sans', sans-serif;
+    
+}
+p{
+    font-size: 0.9rem;
+    display:none;
+    color:hsl(292, 16%, 49%);
+    line-height: 1.5;
+}
+.head {
+    height: 250px;
+    background-image: url("../assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    
+
+}
+.head-star svg{
+    width: 20px;
+    height: 20px;
+}
+button {
+    background-image: url("../assets/images/icon-plus.svg");
+    width: 35px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+   
+}
+h1,h3{
+    margin: 0;
+    padding: 0;
+}
+.faq{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 450px;
+
+    
+}
+.faq-head{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:5%;
+}
+.question-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.question-head h4{
+    flex-basis: 70%;
+}
+.question-head h4:hover{
+    color:#ad28eb;
+}
+.attribution{
+    text-align: center;
+    margin: 2rem;
+}
+#faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:-6rem 1rem 4rem 1rem;
+
+   }
+
+
+@media(min-width:376px){
+   
+    .head{
+        background-image: url("../assets/images/background-pattern-desktop.svg");
+        height: 300px;
+
+    }
+ 
+   
+}
